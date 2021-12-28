@@ -2,6 +2,10 @@ import type { AWS } from '@serverless/typescript'
 
 import hello from '@functions/hello'
 import objSort from '@functions/objSort'
+import findFirstPos from '@functions/findFirstPos'
+import nSumProd from '@functions/nSumProd'
+import sumPos from '@functions/sumPos'
+import todayNum from '@functions/todayNum'
 
 const serverlessConfiguration: AWS = {
 	service: 'lambda-serverless',
@@ -22,7 +26,7 @@ const serverlessConfiguration: AWS = {
 		region: 'eu-north-1',
 	},
 	// import the function via paths
-	functions: { hello, objSort },
+	functions: { hello, objSort, findFirstPos, nSumProd, sumPos, todayNum },
 	package: { individually: true },
 	custom: {
 		esbuild: {

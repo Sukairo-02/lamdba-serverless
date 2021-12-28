@@ -1,1 +1,5 @@
-export { default as hello } from './hello';
+export { default as hello } from './hello'
+export { default as findFirstPos } from './findFirstPos'
+export { default as nSumProd } from './nSumProd'
+export { default as sumPos } from './sumPos'
+export { default as todayNum } from './todayNum'
